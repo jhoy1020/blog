@@ -1,0 +1,37 @@
+.collapsible-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+}
+
+.collapsible-card-title {
+  margin: 0 0 5px 0;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.collapsible-card-body {
+  height: 100%;
+  width: 100%;
+}
+
+.collapsible-card-body-disable {
+  display: none;
+}
+
+.collapsible-card-link {
+  background: none;
+  border: none;
+  color: #2a71bf;
+  font-size: 12pt;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.collapsible-card-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}

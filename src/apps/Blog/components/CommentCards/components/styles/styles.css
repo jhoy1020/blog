@@ -1,0 +1,79 @@
+.comment-card {
+  width: 700px;
+  margin-top: 20px;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.comment-card-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.comment-card-header {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+.comment-card-info {
+  display: block;
+}
+
+.comment-card-title {
+  margin-bottom: 5px;
+}
+
+.comment-card-date {
+  color: #6c757d;
+}
+
+.comment-card-image {
+  margin: 10px;
+}
+
+.comment-card-avatar {
+  border-radius: 50%;
+}
+
+.comment-card-remove {
+  margin-right: 4px;
+}
+
+.comment-card-remove-button {
+  background: transparent;
+  border: 0px;
+  color: #0077b5;
+  font-size: 11pt;
+}
+
+.comment-card-remove-button:hover {
+  color: #0077b5;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.comment-card-body {
+  display: flex;
+  margin: 10px;
+  word-wrap: anywhere;
+}
+
+.comment-card-text-input {
+  margin-bottom: 15px;
+}
+
+.comment-card-form {
+  width: 100%;
+}
+
+.comment-card-text-area {
+  box-sizing: border-box;
+  height: 150px;
+  padding: 10px 10px;
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
+}

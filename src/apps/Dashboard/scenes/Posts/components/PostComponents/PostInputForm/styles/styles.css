@@ -1,0 +1,16 @@
+.post-input-container {
+  margin: 20px 0 0 0;
+  width: 100%;
+}
+.post-input-form-input {
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin: 10px 0;
+  padding: 12px;
+  width: 100%;
+}
+
+.post-input-save-button {
+  margin: 10px 0;
+}

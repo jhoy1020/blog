@@ -1,0 +1,13 @@
+.github-button-link {
+  background: none;
+  border: none;
+  color: #007bff;
+  font-size: 12pt;
+  padding-left: 0px;
+  text-decoration: none;
+}
+
+.github-button-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}

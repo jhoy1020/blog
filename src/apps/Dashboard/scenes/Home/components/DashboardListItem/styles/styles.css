@@ -1,0 +1,30 @@
+.dashboard-item-container {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+  margin-left: 12px;
+}
+
+.dashboard-item-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dashboard-item-header {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dashboard-item-info {
+  display: block;
+}
+
+.dashboard-item-title {
+  margin-bottom: 5px;
+}
+
+.dashboard-item-date {
+  color: #6c757d;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,51 @@
+.image-browse-label {
+  padding-right: 20px;
+}
+
+.image-input {
+  visibility: hidden;
+  width: 0;
+}
+
+.image-input-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  width: 100%;
+}
+
+.image-upload-container {
+  margin: 20px 0;
+}
+
+.image-upload-file {
+  border: 1px solid #e6e9ec;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+}
+
+.image-upload-file-input {
+  box-sizing: border-box;
+  min-width: 550px;
+  width: 75%;
+}
+
+.image-upload-image {
+  width: 300;
+  height: 300;
+}
+
+.image-upload-preview {
+  display: flex;
+  height: auto;
+  justify-content: space-between;
+  margin: 10px 0;
+  min-height: 250px;
+  width: 100%;
+}
+
+.image-upload-title-alert {
+  color: red;
+  margin: 5px;
+}

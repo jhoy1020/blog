@@ -1,0 +1,21 @@
+.about-card-container {
+  background: #eeeff0;
+  border: 1px solid #eeeff0;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 5px;
+  width: auto;
+}
+
+.about-card-body {
+  padding: 10px;
+}
+
+.about-card-title {
+  font-style: italic;
+  margin: 0;
+}
+
+.about-card-details {
+  margin: 15px 0;
+}

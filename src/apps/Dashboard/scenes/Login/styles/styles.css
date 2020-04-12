@@ -1,0 +1,39 @@
+.login-container {
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 25%;
+}
+
+.login-input {
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  font-size: 12pt;
+  margin: 10px 0;
+  padding: 10px 0 10px 10px;
+  width: 100%;
+}
+
+.login-header {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.login-captcha {
+  display: flex;
+  justify-content: left;
+  margin: 20px 0px;
+  padding: 0;
+}
+
+.login-button {
+  display: flex;
+  justify-content: right;
+}
+
+.login-footer {
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  padding: 50px 15px;
+  margin: 0 auto;
+}

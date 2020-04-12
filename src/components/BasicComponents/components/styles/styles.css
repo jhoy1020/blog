@@ -1,0 +1,21 @@
+.basic-label {
+  margin: 10px 1px 10px 2px;
+}
+
+.basic-label-alert {
+  color: red;
+  margin: 0px 0px 0px 5px;
+}
+
+.basic-input {
+  margin: 10px 0;
+  height: 100%;
+  width: 100%;
+}
+
+.basic-rich-text-area {
+  display: block;
+  height: auto;
+  padding: 5px 0;
+  widows: auto;
+}

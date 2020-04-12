@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+}
+
+.shared-button {
+  border-radius: 5px;
+  border: 1px solid #58a8ff;
+  background: transparent;
+  color: #0077b5;
+  font-size: 10pt;
+  padding: 10px 20px;
+}
+
+.shared-button:disabled {
+  color: #ccc;
+  background: transparent;
+  border: 1px solid #ccc;
+}
+
+.shared-button:hover:disabled {
+  color: #ccc;
+  background: transparent;
+  border: 1px solid #ccc;
+}
+
+.shared-button:hover:enabled {
+  background: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.shared-button-link {
+  background: transparent;
+  border: 0px;
+  color: #007bff;
+  font-size: 12pt;
+  vertical-align: middle;
+}
+
+.shared-button-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.shared-link {
+  color: #007bff;
+  font-size: 12pt;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.shared-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
