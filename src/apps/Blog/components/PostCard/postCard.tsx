@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 // import { ImagePreview } from '../../../../components/SharedComponents';
+import { postPath } from '../../../../utils/seo';
 import './styles/styles.css';
 
 /**
@@ -21,7 +22,7 @@ const PostCard = ({
   const dateString: string = new Date(createdAt).toDateString();
   return (
     <Link
-      to={`/posts/${uuid}`}
+      to={postPath({ title, uuid })}
       style={{ textDecoration: 'none', color: 'black' }}
     >
       <div className='post-card'>

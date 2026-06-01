@@ -1,4 +1,5 @@
 import React from 'react';
+import { Seo } from '../../../../components';
 import './styles/styles.css';
 
 /**
@@ -7,6 +8,11 @@ import './styles/styles.css';
 const PrivacyPolicy = (): JSX.Element => {
   return (
     <div className='privacy-container'>
+      <Seo
+        title='Privacy Policy'
+        description="The privacy policy for Josh Hoy's Personal Blog: what data is collected, how it is used, and your rights."
+        canonicalPath='/privacy'
+      />
       <h1>Privacy Policy</h1>
 
       <p>Last updated: April 03, 2020</p>

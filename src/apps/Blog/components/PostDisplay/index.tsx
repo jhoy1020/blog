@@ -14,13 +14,13 @@ const PostDetails = ({ post }: IPostDetailsProps): JSX.Element => {
   return (
     <div className='blog-post-container'>
       <img
-        alt='post'
+        alt={post ? post.title : 'post'}
         className='post-details-image'
         height='auto'
         src={post && post.imageUrl}
         width={250}
       />
-      <h2>{post ? post.title : ''}</h2>
+      <h1>{post ? post.title : ''}</h1>
       <p>{dateString}</p>
       <div dangerouslySetInnerHTML={{ __html: post ? post.text : '' }} />
     </div>

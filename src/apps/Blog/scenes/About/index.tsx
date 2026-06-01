@@ -1,4 +1,5 @@
 import React from 'react';
+import { Seo } from '../../../../components';
 import jhoy from './images/jhoy.jpeg';
 import './styles/styles.css';
 
@@ -8,6 +9,11 @@ import './styles/styles.css';
 const AboutPage = (): JSX.Element => {
   return (
     <div className='about-container'>
+      <Seo
+        title='About'
+        description='Josh Hoy is a software engineer from Pennsylvania sharing code, tutorials, and lessons on React, JavaScript, and shipping software faster.'
+        canonicalPath='/about'
+      />
       <img
         alt='jhoy'
         className='about-profile-image'

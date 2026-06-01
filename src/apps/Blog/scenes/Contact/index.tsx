@@ -1,6 +1,6 @@
 import React, { ChangeEvent, MouseEvent, useState } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
-import { BasicInput, BasicTextArea } from '../../../../components';
+import { BasicInput, BasicTextArea, Seo } from '../../../../components';
 import blogApi from '../../../../services/api';
 import './styles/styles.css';
 
@@ -101,6 +101,11 @@ const ContactPage = (): JSX.Element => {
 
   return (
     <div className='blog-container'>
+      <Seo
+        title='Contact'
+        description='Get in touch with Josh Hoy — questions, feedback, or suggestions about the blog and its posts.'
+        canonicalPath='/contact'
+      />
       <div className='contact-container'>
         <BasicInput
           className='contact-input'

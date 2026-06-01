@@ -1,6 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import { Routes } from './routes';
 import './styles/styles.css';
 
-ReactDOM.render(<Routes />, document.getElementById('root'));
+ReactDOM.render(
+  <HelmetProvider>
+    <Routes />
+  </HelmetProvider>,
+  document.getElementById('root')
+);

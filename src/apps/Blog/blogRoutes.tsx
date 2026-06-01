@@ -22,7 +22,19 @@ const BlogRoutes = (): JSX.Element => {
         <Header />
         <PostProvider initialState={initialPostState} reducers={PostReducer}>
           <Route exact={true} path='/' component={ConnectedHomePage} />
-          <Route path='/posts/:uuid' component={ConnectedPostDisplayPage} />
+          {/* Descriptive slug URL (preferred). The :uuid is what the post is
+              actually looked up by; the :slug is purely for humans/SEO. */}
+          <Route
+            exact={true}
+            path='/posts/:slug/:uuid'
+            component={ConnectedPostDisplayPage}
+          />
+          {/* Legacy UUID-only URL kept so old links/bookmarks still resolve. */}
+          <Route
+            exact={true}
+            path='/posts/:uuid'
+            component={ConnectedPostDisplayPage}
+          />
         </PostProvider>
         <Route path='/about' component={AboutPage} />
         <Route path='/contact' component={ContactPage} />

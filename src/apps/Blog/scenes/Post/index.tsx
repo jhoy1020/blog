@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { useAsyncEffect } from 'use-async-effect';
-import { BasicList, GithubLoginButton } from '../../../../components';
+import { BasicList, GithubLoginButton, Seo } from '../../../../components';
 import { history } from '../../../../services/history/history';
 import * as postProvider from '../../../../state/posts/postProvider';
 import * as userProvider from '../../../../state/users/userProvider';
+import { postPath, toDescription } from '../../../../utils/seo';
 import { CommentCard, CreateCommentCard, PostDetails } from '../../components';
 import '../styles/styles.css';
 
@@ -119,6 +120,20 @@ const PostDisplayPage = ({
 
   return (
     <div className='blog-container'>
+      {post && (
+        <Seo
+          title={post.title}
+          description={toDescription(post.text)}
+          canonicalPath={postPath(post)}
+          imageUrl={post.imageUrl}
+          article={{
+            modifiedTime: post.updatedAt
+              ? new Date(post.updatedAt).toISOString()
+              : undefined,
+            publishedTime: new Date(post.createdAt).toISOString(),
+          }}
+        />
+      )}
       <PostDetails post={post} key={post ? post.uuid : ''} />
       <hr className='post-details-border' />
       <div>
